@@ -5967,5 +5967,224 @@ font-size: 15px;
         font-size: 30px;
     }
 }
+/* bounce */
+.header .arrow {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+    z-index: 8;
+}
+.header .arrow.bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+.header .arrow i {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 100%;
+}
 
+.header .arrow i:hover {
+    border: 1px solid #102983;
+}
+.header .arrow i:hover:after {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
 
+}
+
+/* ===== Kenburns Slider style ===== */
+.kenburns-section {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.kenburns-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  background: #000;
+}
+.kenburns-inner {
+  position: relative;
+  z-index: 15;
+}
+.kenburns-inner .caption {
+    position: relative;
+}
+.kenburns-inner .caption h4 {
+    font-family: 'Barlow Condensed', serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+}
+
+.kenburns-inner .caption h3 {
+    position: relative;
+    margin-bottom: 20px;
+    font-family: 'Gilda Display', serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 1.35em;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width: 767px) {
+.kenburns-inner .caption h4 {
+    font-size: 12px;
+}   
+.kenburns-inner .caption h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+    line-height: 1.35em;
+}
+    
+.kenburns-inner .caption h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+    line-height: 1.35em;
+}
+    
+    .kenburns-inner .caption {
+    text-align: center;
+    }
+    
+}
+/* reservation field for Kenburns slider */
+.kenburns-section div.reservation {
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    text-orientation: sideways;
+    text-orientation: sideways;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    height: 60%;
+    z-index: 999999999;
+}
+.kenburns-section div.reservation .call {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 12px;
+    line-height: 1.75em;
+    margin-top: 15px;
+} 
+.kenburns-section div.reservation .call span {
+       font-family: 'Gilda Display', serif;
+    font-size: 24px;
+    color: #102983;
+    letter-spacing: 1px;
+} 
+.kenburns-section div.reservation .icon {
+    position: absolute;
+    left: -1px;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(255,255,255,0.5);
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    border-radius: 100%;
+}
+.kenburns-section div.reservation a .icon i {
+    color: #FFF;
+    font-size: 24px;
+    transform: rotate(90deg);
+}
+.kenburns-section div.reservation a .icon:hover {
+    border: 1px solid #102983;
+}
+
+/* bounce */
+.kenburns-section .arrow {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+    z-index: 80;
+}
+.kenburns-section .arrow.bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+.kenburns-section .arrow i {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 100%;
+}
+
+.kenburns-section .arrow i:hover {
+    border: 1px solid #102983;
+}
+.kenburns-section .arrow i:hover:after {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+
+}
+
+@media screen and (max-width: 992px) {
+    .kenburns-section div.reservation {
+        transform: rotate(270deg);
+        text-orientation: sideways;
+        text-orientation: sideways;
+        margin: 0;
+        position: absolute;
+        top: 320px;
+        left: 340px;
+        height: 60%;
+        z-index: 999999999;
+    }
+}
