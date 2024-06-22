@@ -62,6 +62,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     /* font-smoothing: antialiased; */
+    overflow: hidden;
 }
 * {
     margin: 0;
