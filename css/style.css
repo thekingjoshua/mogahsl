@@ -6138,18 +6138,18 @@ font-size: 15px;
 }
 
 /* bounce */
-.kenburns-section .arrow {
+.arrow {
     position: absolute;
     bottom: 40px;
     width: 100%;
     text-align: center;
     z-index: 80;
 }
-.kenburns-section .arrow.bounce {
+.arrow.bounce {
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
 }
-.kenburns-section .arrow i {
+.arrow i {
     position: relative;
     display: inline-block;
     width: 50px;
@@ -6161,10 +6161,10 @@ font-size: 15px;
     border-radius: 100%;
 }
 
-.kenburns-section .arrow i:hover {
+.arrow i:hover {
     border: 1px solid #102983;
 }
-.kenburns-section .arrow i:hover:after {
+.arrow i:hover:after {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     opacity: 0;
@@ -6308,7 +6308,7 @@ font-size: 15px;
     font-size: 15px;
     font-weight: 300;
     line-height: 1.25em;
-    color: #1b1b1b;
+    /* color: #1b1b1b; */
     margin: 11px 0 0 0;
     padding: 0 0 11px 0;
     list-style: none;
@@ -6366,6 +6366,9 @@ font-size: 15px;
     margin-left: 10px;
     top: 7px;
     font-style: normal;
+}
+.patara-main-menu > ul > li > a.active{
+    color: #102983 ;
 }
 /* footer */
 #patara-aside .patara-footer {
