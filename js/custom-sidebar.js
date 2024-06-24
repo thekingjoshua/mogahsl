@@ -1,34 +1,3 @@
-/* -------------------------------------------------------
-
-01. ScrollIt
-02. Navbar scrolling background
-03. Close navbar-collapse when a  clicked
-04. Sections background image from data background 
-05. Animations
-06. YouTubePopUp
-07. Rooms 1 owlCarousel
-08. Rooms 2 owlCarousel
-09. Rooms 4 owlCarousel
-10. Rooms Details 1 owlCarousel
-11. Rooms Details 2 owlCarousel
-12. Amenities owlCarousel
-13. Services 2 owlCarousel
-14. Blog Home owlCarousel
-15. Testimonials owlCarousel 
-16. Client 
-17. Accordion Box (for Faqs)
-18. Accordion Menu
-19. MagnificPopup Gallery
-20. Smooth Scrolling
-21. Scroll back to top
-22. Select2
-23. Datepicker
-24. Slider
-25. Preloader
-26. Contact Form
-
-
-------------------------------------------------------- */
 $(function () {
     "use strict";
     var wind = $(window);
@@ -44,24 +13,67 @@ $(function () {
         topOffset: -70 // offste (in px) for fixed top navigation
     });
     
-    // Navbar scrolling background
-    wind.on("scroll", function () {
-        var bodyScroll = wind.scrollTop(),
-            navbar = $(".navbar"),
-            logo = $(".navbar .logo> img");
-        if (bodyScroll > 100) {
-            navbar.addClass("nav-scroll");
-            logo.attr('src', 'img/hotel-logo-no-bg.png');
-        } else {
-            navbar.removeClass("nav-scroll");
-            logo.attr('src', 'img/hotel-logo-no-bg.png');
+    // Burger Menu 
+    var burgerMenu = function () {
+        $('.js-patara-nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            var $this = $(this);
+            if ($('body').hasClass('offcanvason')) {
+                $this.removeClass('active');
+                $('body').removeClass('offcanvason');
+            }
+            else {
+                $this.addClass('active');
+                $('body').addClass('offcanvason');
+            }
+        });
+    };
+    
+    // Click outside of offcanvason
+    var mobileMenuOutsideClick = function () {
+        $(document).click(function (e) {
+            var container = $("#patara-aside, .js-patara-nav-toggle");
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                if ($('body').hasClass('offcanvason')) {
+                    $('body').removeClass('offcanvason');
+                    $('.js-patara-nav-toggle').removeClass('active');
+                }
+            }
+        });
+        $(window).scroll(function () {
+            if ($('body').hasClass('offcanvason')) {
+                $('body').removeClass('offcanvason');
+                $('.js-patara-nav-toggle').removeClass('active');
+            }
+        });
+    };
+    
+    // Sub Menu 
+    $('.patara-main-menu li.patara-sub>a').on('click', function () {
+        $(this).removeAttr('href');
+        var element = $(this).parent('li');
+        if (element.hasClass('open')) {
+            element.removeClass('open');
+            element.find('li').removeClass('open');
+            element.find('ul').slideUp();
+        }
+        else {
+            element.addClass('open');
+            element.children('ul').slideDown();
+            element.siblings('li').children('ul').slideUp();
+            element.siblings('li').removeClass('open');
+            element.siblings('li').find('li').removeClass('open');
+            element.siblings('li').find('ul').slideUp();
         }
     });
+    $('.patara-main-menu>ul>li.patara-sub>a').append('<span class="holder"></span>');
     
-    // Close navbar-collapse when a  clicked
-    $(".navbar-nav .dropdown-item a").on('click', function () {
-        $(".navbar-collapse").removeClass("show");
+    // Document on load.
+    $(function () {
+        burgerMenu();
+        mobileMenuOutsideClick();
     });
+    
     
     // Sections background image from data background
     var pageSection = $(".bg-img, section");
@@ -633,16 +645,3 @@ form.submit(function (e) {
     }).done(done_func).fail(fail_func);
 });
 
-const isMobile = window.innerWidth < 768;
-const navBarEl = document.querySelector('.navbar')
-const burgerNavBarAside = document.querySelector('#patara-aside')
-
-if(isMobile) {
-    navBarEl.textContent = ""
-    navBarEl.style.display = "none"
-}
-
-if(!isMobile) {
-    burgerNavBarAside.textContent = ""
-    burgerNavBarAside.style.display = "none"
-}
