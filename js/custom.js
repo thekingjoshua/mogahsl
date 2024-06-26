@@ -633,6 +633,41 @@ form.submit(function (e) {
     }).done(done_func).fail(fail_func);
 });
 
+    // Restaurant Menu owlCarousel
+    $('.restaurant-menu .owl-carousel').owlCarousel({
+        loop: false,
+        margin: 0,
+        autoplay: false,
+        dots: false,
+        nav: true,
+        navText: ["<span class='lnr ti-angle-left'></span>","<span class='lnr ti-angle-right'></span>"],
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true
+            },
+            600: {
+                items: 3,
+            },
+            1000: {
+                items: 3,
+                nav: false
+            }
+        }
+    });
+    
+    // Restaurant Menu Tabs
+    $(".restaurant-menu .tabs-icon").on("click", ".item", function () {
+        $(".item").removeClass("active");
+        var myID = $(this).attr("id");
+        $(".restaurant-menu .cont").hide();
+        $("#" + myID + "-content").fadeIn();
+    });
+    $(".restaurant-menu .tabs-icon").on("click", ".owl-item", function () {
+        $(this).addClass("actived").siblings().removeClass("actived");
+    });
+
 const isMobile = window.innerWidth < 768;
 const navBarEl = document.querySelector('.navbar')
 const burgerNavBarAside = document.querySelector('#patara-aside')

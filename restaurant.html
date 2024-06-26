@@ -117,9 +117,9 @@
         </div>
     </section>
     <!-- Restaurant Menu -->
-    <section class="section-padding menu faq-1 bg-blck">
+    <section id="menu" class="restaurant-menu menu section-padding bg-blck">
         <div class="container">
-            <div class="row"  >
+            <div class="row">
                 <div class="col-md-9" style="width: 100%;">
                     <div class="section-title white">
                         <span>Restaurant Menu</span>
@@ -127,275 +127,132 @@
                     <p class="mb-30">Our menu is designed to tantalize your taste buds with a delightful array of dishes inspired by local flavors and global cuisine.</p>
                     <div class="row menu-book">
                         <div class="col-md-12">
-                            <ul class="accordion-menu clearfix">
-                                <li class="accordion block">
-                                    <div class="acc-btn">Breakfast</div>
-                                    <div class="acc-content">
-                                        <div class="content">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-12">
-                                                    <div class="menu-list mb-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Chips & Egg</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦3,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list">
-                                                        <div class="item">
-                                                            <div class="img">
-                                                            </div>
-                                                            <div class="flex">
-                                                                <div class="title">Fried Yam & Egg Sauce</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦3,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list mt-30">
-                                                        <div class="item">
-                                                            <div class="img">
-                                                            </div>
-                                                            <div class="flex">
-                                                                <div class="title">Boiled Yam & Egg Sauce</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦3,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list mt-30">
-                                                        <div class="item">
-                                                            <div class="img">
-                                                            </div>
-                                                            <div class="flex">
-                                                                <div class="title">Golden Yam & tomato sauce</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦3,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list mt-30">
-                                                        <div class="item">
-                                                            <div class="img">
-                                                            </div>
-                                                            <div class="flex">
-                                                                <div class="title">Cornflakes & Milk</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦3,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-12">
-                                                    <div class="menu-list mb-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Indomie & Egg</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦2,500</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list mt-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Tea</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦500</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list mt-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Omelet</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦700</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list mt-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Oat & Milk</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦1,500</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list mt-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Custard & Milk</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦500</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="tabs-icon col-md-10 offset-md-1 text-center">
+                            <div class="owl-carousel owl-theme">
+                                <div id="tab-1" class="active item">
+                                    <h6>Breakfast</h6>
+                                </div>
+                                <div id="tab-2" class="item">
+                                    <h6>Lunch / Dinner</h6>
+                                </div>
+                                <div id="tab-3" class="item">
+                                    <h6>Pepper Soup</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurant-menu-content col-md-12">
+                            <!-- Starters -->
+                            <div id="tab-1-content" class="cont active">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="menu-info mt-30">
+                                            <h5>Chips & Egg  <span class="price">₦3,000</span></h5>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Fried Yam egg sauce  <span class="price">₦3,000</span></h5>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Boiled Yam egg sauce  <span class="price">₦3,000</span></h5>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Indomie & Egg  <span class="price">₦3,000</span></h5>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Cornflakes & Milk	<span class="price">₦1,500</span></h5>
+                                        </div>  
+                                    </div>
+                                    <div class="col-md-5 offset-md-2">
+                                        <div class="menu-info mt-30">
+                                            <h5>Tea	 <span class="price">₦500</span></h5>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Omelet	<span class="price">₦700</span></h5>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Golden Yam, Tomato sauce <span class="price">₦3,000</span></h5>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Custard & Milk  <span class="price">₦1,500</span></h5>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Oat & Milk  <span class="price">₦1,500</span></h5>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="accordion block">
-                                    <div class="acc-btn">Lunch / Dinner</div>
-                                    <div class="acc-content">
-                                        <div class="content">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-12">
-                                                    <div class="menu-list mb-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Fried Rice, chicken / Goat meat / fish</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦4,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Fried Rice, beef</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦4,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list mt-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">White Rice, stew, chicken/goat meat/fish</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦4,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list mt-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Poundo Yam  </div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦4,000</div>
-                                                            </div>
-                                                            <p><i>with either: bitterleaf, egusi, ogbono, vegetable soup</i></p>
-                                                            <p><i>& Chicken / Goat Meat / Fish / Beef</i></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-12">
-                                                    <div class="menu-list mb-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">White Rice, stew, beef</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦4,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Jollof Rice, chicken/goat meat/fish</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦4,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list mt-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Semovita / Wheat </div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦4,000</div>
-                                                            </div>
-                                                            <p><i>with either: bitterleaf, egusi, ogbono, vegetable soup</i></p>
-                                                            <p><i>& Chicken / Goat Meat / Fish / Beef</i></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                </div>
+                            </div>
+                            <!-- Mains -->
+                            <div id="tab-2-content" class="cont">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="menu-info mt-30">
+                                            <h5>Fried Rice   <span class="price">₦4,000</span></h5>
+                                            <p>& chicken / goat meat / fish / beef</p>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Fried Rice, beef  <span class="price">₦4,000</span></h5>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>White Rice & Stew<span class="price">₦4,000</span></h5>
+                                            <p>& chicken / goat meat / fish / beef</p>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Jollof Rice <span class="price">₦3,000</span></h5>
+                                            <p>& chicken / goat meat / fish</p>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="accordion block">
-                                    <div class="acc-btn">Pepper Soup</div>
-                                    <div class="acc-content">
-                                        <div class="content">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-12">
-                                                    <div class="menu-list mb-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Cow head Pepper Soup</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦3,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Cow tail	 Pepper Soup</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦3,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list mt-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Cow leg Pepper Soup</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦3,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list mt-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Cat fish Pepper Soup</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦3,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-12">
-                                                    <div class="menu-list mb-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Goat meat Pepper Soup</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦3,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Chicken Pepper Soup</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦3,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-list mt-30">
-                                                        <div class="item">
-                                                            <div class="flex">
-                                                                <div class="title">Intestine Pepper Soup</div>
-                                                                <div class="dots"></div>
-                                                                <div class="price">₦3,000</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="col-md-5 offset-md-2">
+
+                                        <div class="menu-info mt-30">
+                                            <h5>Semovita / Wheat <span class="price">₦4,000</span></h5>
+                                            <p>with either: bitterleaf / egusi / ogbono / vegetable soup</p>
+                                            <p>& chicken / goat meat / fish / beef</p>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Poundo Yam  <span class="price">₦4,000</span></h5>
+                                            <p>with either: bitterleaf / egusi / ogbono / vegetable soup</p>
+                                            <p>& chicken / goat meat / fish / beef</p>
                                         </div>
                                     </div>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
+                            <!-- Salads -->
+                            <div id="tab-3-content" class="cont">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="menu-info mt-30">
+                                            <h5>Cow head Pepper Soup  <span class="price">₦3,000</span></h5>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Cow tail Pepper Soup <span class="price">₦3,000</span></h5>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Cow leg	 Pepper Soup <span class="price">₦3,000</span></h5>
+                                        </div>
+                                        <div class="menu-info mt-30">
+                                            <h5>Goat Meat Pepper Soup <span class="price">₦3,000</span></h5>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-5 offset-md-2">
+                                        <div class="menu-info mt-30">
+                                            <h5>Chicken Pepper Soup	<span class="price">₦1,500</span></h5>
+                                        </div> 
+                                        <div class="menu-info mt-30">
+                                            <h5>Intestine Pepper Soup	<span class="price">₦1,500</span></h5>
+                                        </div> 
+                                        <div class="menu-info mt-30">
+                                            <h5>Cat fish Pepper Soup	<span class="price">₦1,500</span></h5>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
