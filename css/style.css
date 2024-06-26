@@ -810,7 +810,7 @@ color: #102983;
     line-height: 1.2em;
 }
 .section-title span {
-    color: #102983;
+    color: #008bd0;
 }
 .section-title.whte {
     color: #fff;
@@ -3965,6 +3965,9 @@ button.mfp-arrow {
 .menu-book .menu-list .item {
     line-height: 35px;
 }
+.menu-book .menu-list .item > p{
+    margin-bottom: 0;
+}
 .menu-book .menu-list .flex .title {
     -ms-flex-negative: 0;
     flex-shrink: 0;
@@ -3990,7 +3993,7 @@ button.mfp-arrow {
     margin-left: auto;
     font-family: 'Libre Caslon Display', serif;
     font-size: 18px;
-    color: #102983;
+    color: #008bd0;
     font-weight: 400;
 }
 .menu-book .menu-list .img {
