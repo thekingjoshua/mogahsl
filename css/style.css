@@ -798,7 +798,7 @@ color: #102983;
     margin-bottom: 0px;
 }
 .section-subtitle span {
- color: #102983;
+ color: #008bd0;
 }
 .section-title {
     font-size: 45px;
@@ -4010,8 +4010,6 @@ button.mfp-arrow {
 	width: 60px;
 }
 .flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     outline: none;
 }
