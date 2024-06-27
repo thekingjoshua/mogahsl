@@ -5108,10 +5108,6 @@ button.mfp-arrow {
     font-size: 30px;
     color: #1b1b1b;
 }
-.map {	
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	}
 /* reservation button */
 .reservations {
     display: flex;
