@@ -424,6 +424,7 @@ $(function () {
             enabled: true
         }
     });
+
     $(".img-zoom").magnificPopup({
         type: "image",
         closeOnContentClick: !0,
@@ -432,8 +433,12 @@ $(function () {
             enabled: !0,
             navigateByImgClick: !0,
             preload: [0, 1]
+        },
+        callbacks: {
+            markupParse: function(template, values, item) {values.title = item.el.attr('title');}
         }
-    })
+        
+    });
     $('.magnific-youtube, .magnific-vimeo, .magnific-custom').magnificPopup({
         disableOn: 700,
         type: 'iframe',
