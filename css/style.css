@@ -1981,6 +1981,14 @@ hr {
     line-height: 1.2em;
     color: #102983;
 }
+.caption  span.price {
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 30px;
+    margin-top: 0;
+    /* line-height: 1.2em; */
+    color: #008bd0;
+    margin-bottom: 30px;
+}
 /* owl nav */
 .rooms1 .owl-theme .owl-nav {
     position: absolute !important;
@@ -3047,7 +3055,7 @@ hr {
 }
 .room-details2 .wrap .caption .icon span {
     font-size: 20px;
-    color: #102983;
+    color: #008bd0;
     background-color: transparent;
     font-weight: normal;
 }
@@ -3075,7 +3083,7 @@ hr {
     margin: 0 3px;
     border-radius: 50%;
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid #102983;
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
@@ -3084,8 +3092,8 @@ hr {
 }
 .room-details2 .owl-theme .owl-dots .owl-dot.active span,
 .room-details2 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #fff;
-    border: 1px solid #fff;
+    background: #102983;
+    border: 1px solid #102983;
     color: #1b1b1b;
 }
 .room-details2 .owl-theme .owl-dots {
