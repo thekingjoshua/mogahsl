@@ -1,34 +1,3 @@
-/* -------------------------------------------------------
-
-01. ScrollIt
-02. Navbar scrolling background
-03. Close navbar-collapse when a  clicked
-04. Sections background image from data background 
-05. Animations
-06. YouTubePopUp
-07. Rooms 1 owlCarousel
-08. Rooms 2 owlCarousel
-09. Rooms 4 owlCarousel
-10. Rooms Details 1 owlCarousel
-11. Rooms Details 2 owlCarousel
-12. Amenities owlCarousel
-13. Services 2 owlCarousel
-14. Blog Home owlCarousel
-15. Testimonials owlCarousel 
-16. Client 
-17. Accordion Box (for Faqs)
-18. Accordion Menu
-19. MagnificPopup Gallery
-20. Smooth Scrolling
-21. Scroll back to top
-22. Select2
-23. Datepicker
-24. Slider
-25. Preloader
-26. Contact Form
-
-
-------------------------------------------------------- */
 $(function () {
     "use strict";
     var wind = $(window);
@@ -138,99 +107,6 @@ $(function () {
         });
     }
     
-    // Rooms 2 owlCarousel
-    $('.rooms2 .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        mouseDrag: true,
-        autoplay: false,
-        dots: true,
-        nav: true,
-        navText: ["<span class='lnr ti-angle-left'></span>", "<span class='lnr ti-angle-right'></span>"],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-    
-    // Rooms 4 owlCarousel 
-    $('.room4 .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        mouseDrag: true,
-        autoplay: false,
-        dots: true,
-        autoplayHoverPause: true,
-        nav: false,
-        navText: ["<span class='lnr ti-angle-left'></span>", "<span class='lnr ti-angle-right'></span>"],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
-    
-    // Rooms Details owlCarousel 
-    $('.room-details1 .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        mouseDrag: true,
-        autoplay: true,
-        dots: true,
-        nav: true,
-        navText: ["<span class='lnr ti-angle-left'></span>", "<span class='lnr ti-angle-right'></span>"],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-    
-    // Room Details 2 owlCarousel
-    $('.room-details2 .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        mouseDrag: true,
-        autoplay: true,
-        dots: true,
-        nav: true,
-        navText: ["<span class='lnr ti-angle-left'></span>", "<span class='lnr ti-angle-right'></span>"],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-    
     // Amenities owlCarousel 
     $('.amenities .owl-carousel').owlCarousel({
         loop: true,
@@ -253,79 +129,7 @@ $(function () {
                 items: 3
             }
         }
-    });
-    
-    // Services 2 owlCarousel
-    $('.services2 .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        mouseDrag: true,
-        autoplay: false,
-        dots: true,
-        nav: false,
-        navText: ["<span class='lnr ti-angle-left'></span>", "<span class='lnr ti-angle-right'></span>"],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-    
-    // Team owlCarousel 
-    $('.team .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        mouseDrag: true,
-        autoplay: false,
-        dots: false,
-        autoplayHoverPause: true,
-        nav: false,
-        navText: ["<span class='lnr ti-angle-left'></span>", "<span class='lnr ti-angle-right'></span>"],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
-    
-    // Blog Home owlCarousel 
-    $('.blog-home .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        mouseDrag: true,
-        autoplay: false,
-        dots: true,
-        autoplayHoverPause: true,
-        nav: false,
-        navText: ["<span class='lnr ti-angle-left'></span>", "<span class='lnr ti-angle-right'></span>"],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
-    
+    });            
     // Testimonials owlCarousel 
     $('.testimonials .owl-carousel').owlCarousel({
         loop: true,
@@ -349,73 +153,7 @@ $(function () {
             }
         }
     });
-    
-    // Clients owlCarousel *
-    $('.clients .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        mouseDrag: true,
-        autoplay: true,
-        dots: false,
-        nav: false,
-        navText: ["<span class='lnr ti-angle-left'></span>","<span class='lnr ti-angle-right'></span>"],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                margin: 10,
-                items: 3
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 6
-            }
-        }
-    });
-    
-    // Accordion Box (for Faqs)
-    if ($(".accordion-box").length) {
-        $(".accordion-box").on("click", ".acc-btn", function () {
-            var outerBox = $(this).parents(".accordion-box");
-            var target = $(this).parents(".accordion");
-            if ($(this).next(".acc-content").is(":visible")) {
-                //return false;
-                $(this).removeClass("active");
-                $(this).next(".acc-content").slideUp(300);
-                $(outerBox).children(".accordion").removeClass("active-block");
-            } else {
-                $(outerBox).find(".accordion .acc-btn").removeClass("active");
-                $(this).addClass("active");
-                $(outerBox).children(".accordion").removeClass("active-block");
-                $(outerBox).find(".accordion").children(".acc-content").slideUp(300);
-                target.addClass("active-block");
-                $(this).next(".acc-content").slideDown(300);
-            }
-        });
-    }
-    
-    // Accordion Menu
-    if ($(".accordion-menu").length) {
-        $(".accordion-menu").on("click", ".acc-btn", function () {
-            var outerBox = $(this).parents(".accordion-menu");
-            var target = $(this).parents(".accordion");
-            if ($(this).next(".acc-content").is(":visible")) {
-                //return false;
-                $(this).removeClass("active");
-                $(this).next(".acc-content").slideUp(300);
-                $(outerBox).children(".accordion").removeClass("active-block");
-            } else {
-                $(outerBox).find(".accordion .acc-btn").removeClass("active");
-                $(this).addClass("active");
-                $(outerBox).children(".accordion").removeClass("active-block");
-                $(outerBox).find(".accordion").children(".acc-content").slideUp(300);
-                target.addClass("active-block");
-                $(this).next(".acc-content").slideDown(300);
-            }
-        });
-    }
-    
+        
     // MagnificPopup Gallery
     $('.gallery').magnificPopup({
         delegate: '.popimg',
@@ -606,37 +344,6 @@ $(document).ready(function () {
 $("#preloader").fadeOut(700);
 $(".preloader-bg").delay(700).fadeOut(700);
 var wind = $(window);
-
-// Contact Form
-var form = $('.contact__form'),
-message = $('.contact__msg'),
-form_data;
-// success function
-function done_func(response) {
-    message.fadeIn().removeClass('alert-danger').addClass('alert-success');
-    message.text(response);
-    setTimeout(function () {
-        message.fadeOut();
-    }, 2000);
-    form.find('input:not([type="submit"]), textarea').val('');
-}
-// fail function
-function fail_func(data) {
-    message.fadeIn().removeClass('alert-success').addClass('alert-success');
-    message.text(data.responseText);
-    setTimeout(function () {
-        message.fadeOut();
-    }, 2000);
-}
-form.submit(function (e) {
-    e.preventDefault();
-    form_data = $(this).serialize();
-    $.ajax({
-        type: 'POST',
-        url: form.attr('action'),
-        data: form_data
-    }).done(done_func).fail(fail_func);
-});
 
     // Restaurant Menu owlCarousel
     $('.restaurant-menu .owl-carousel').owlCarousel({
